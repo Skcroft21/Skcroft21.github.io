@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steven's CS-499 ePortfolio</title>
+    <title>Steven Croft's CS-499 ePortfolio</title>
 
     <style>
         body {
@@ -12,16 +12,29 @@
             color: white;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         header {
             background-color: #161b22;
-            padding: 30px;
+            padding: 40px 30px;
             text-align: center;
         }
 
-        h1 {
-            margin: 0;
+        nav {
+            background-color: #010409;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 12px;
+            color: #58a6ff;
+            font-weight: bold;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
         }
 
         p {
@@ -30,13 +43,18 @@
 
         .container {
             width: 90%;
+            max-width: 1200px;
             margin: auto;
-            padding: 20px;
+            padding: 30px 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
         }
 
         .repo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
             gap: 20px;
         }
 
@@ -44,11 +62,37 @@
             background-color: #161b22;
             padding: 20px;
             border-radius: 10px;
+            border: 1px solid #30363d;
             transition: 0.3s;
         }
 
         .repo-card:hover {
-            transform: scale(1.03);
+            transform: scale(1.02);
+            border-color: #58a6ff;
+        }
+
+        .artifact-card {
+            background-color: #161b22;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #58a6ff;
+            margin-bottom: 20px;
+        }
+
+        .button-group a {
+            display: inline-block;
+            margin: 6px 8px 6px 0;
+            padding: 8px 12px;
+            background-color: #238636;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .button-group a:hover {
+            background-color: #2ea043;
+            text-decoration: none;
         }
 
         a {
@@ -62,8 +106,9 @@
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             color: gray;
+            background-color: #010409;
         }
     </style>
 </head>
@@ -71,107 +116,181 @@
 <body>
 
 <header>
-    <h1>Steven's Computer Science ePortfolio</h1>
-
+    <h1>Steven Croft's Computer Science ePortfolio</h1>
     <p>
         Welcome to my CS-499 Capstone ePortfolio at Southern New Hampshire University.
-        This portfolio showcases projects completed throughout the Computer Science program,
-        including software engineering, algorithms and data structures, databases,
-        cybersecurity, graphics, embedded systems, and mobile development.
+        This portfolio showcases my growth in software engineering, algorithms and data structures,
+        databases, cybersecurity, and full stack development.
     </p>
 </header>
 
+<nav>
+    <a href="#self-assessment">Self-Assessment</a>
+    <a href="#code-review">Code Review</a>
+    <a href="#enhancements">Enhancements</a>
+    <a href="#repositories">Repositories</a>
+</nav>
+
 <div class="container">
 
-    <h2>GitHub Repositories</h2>
+    <section id="self-assessment" class="section">
+        <h2>Professional Self-Assessment</h2>
+        <p>
+            My professional self-assessment introduces my growth throughout the Computer Science program,
+            my technical strengths, and my career goals in software engineering, full stack development,
+            and data analytics.
+        </p>
 
-    <div class="repo-grid">
+        <div class="button-group">
+            <a href="files/CS499_Professional_Self_Assessment.docx" target="_blank">Download Self-Assessment</a>
+        </div>
+    </section>
 
-        <div class="repo-card">
-            <h3>CS-465 Full Stack Development</h3>
-            <p>MEAN stack full stack web application project.</p>
-            <a href="https://github.com/Skrocf21/CS-465-Full-Stack-Development" target="_blank">
-                View Repository
-            </a>
+    <section id="code-review" class="section">
+        <h2>Code Review Video</h2>
+        <p>
+            The code review video explains the original artifacts, identifies areas for improvement,
+            and discusses the planned enhancements for software design and engineering, algorithms and
+            data structures, and databases.
+        </p>
+
+        <div class="button-group">
+            <a href="#" target="_blank">View Code Review Video</a>
         </div>
 
-        <div class="repo-card">
-            <h3>CS-340 Advanced Programming Concepts</h3>
-            <p>MongoDB and Python CRUD dashboard project.</p>
-            <a href="https://github.com/Skrocf21/CS-340" target="_blank">
-                View Repository
-            </a>
+        <p><strong>Note:</strong> Replace the code review video link with your YouTube, OneDrive, or Google Drive video link.</p>
+    </section>
+
+    <section id="enhancements" class="section">
+        <h2>CS-499 Artifact Enhancements</h2>
+
+        <div class="artifact-card">
+            <h3>Enhancement One: Software Design and Engineering</h3>
+            <p>
+                <strong>Artifact:</strong> Travlr Full Stack Web Application
+            </p>
+            <p>
+                This enhancement focused on improving a full stack MEAN application through stronger
+                authentication, validation, backend organization, frontend functionality, and maintainability.
+            </p>
+
+            <div class="button-group">
+                <a href="files/Travlr_Software_Design_Engineering_Enhanced.zip" target="_blank">Enhanced Code</a>
+                <a href="files/CS499_Travlr_Software_Design_Narrative.docx" target="_blank">Narrative</a>
+                <a href="https://github.com/Skrocf21/CS-465-Full-Stack-Development" target="_blank">Repository</a>
+            </div>
         </div>
 
-        <div class="repo-card">
-            <h3>CS-260 Data Structures and Algorithms</h3>
-            <p>Course planner using C++ data structures and algorithms.</p>
-            <a href="https://github.com/Skrocf21/CS-260-Software-Test-Automation" target="_blank">
-                View Repository
-            </a>
+        <div class="artifact-card">
+            <h3>Enhancement Two: Algorithms and Data Structures</h3>
+            <p>
+                <strong>Artifact:</strong> ABCU Course Planner
+            </p>
+            <p>
+                This enhancement focused on improving a C++ course planning application through
+                course validation, duplicate detection, improved search functionality, statistics reporting,
+                export functionality, and Visual Studio support.
+            </p>
+
+            <div class="button-group">
+                <a href="files/ABCU_Course_Planner_Original.zip" target="_blank">Original Code</a>
+                <a href="files/ABCU_Course_Planner_Enhanced_VS2022.zip" target="_blank">Enhanced Code</a>
+                <a href="files/CS499_Milestone3_ABCU_Algorithms_Narrative.docx" target="_blank">Narrative</a>
+            </div>
         </div>
 
-        <div class="repo-card">
-            <h3>CS-405 Secure Coding</h3>
-            <p>Projects focused on secure coding and vulnerability mitigation.</p>
-            <a href="https://github.com/Skrocf21/CS-405-Secure-Coding" target="_blank">
-                View Repository
-            </a>
-        </div>
+        <div class="artifact-card">
+            <h3>Enhancement Three: Databases</h3>
+            <p>
+                <strong>Artifact:</strong> Grazioso Salvare Dashboard
+            </p>
+            <p>
+                This enhancement focused on improving a MongoDB and Python dashboard through database
+                optimization, advanced filtering, improved validation, dashboard analytics, and better
+                error handling.
+            </p>
 
-        <div class="repo-card">
-            <h3>CS-350 Emerging Systems</h3>
-            <p>Embedded systems and Raspberry Pi development projects.</p>
-            <a href="https://github.com/Skrocf21/CS-350-current-emerging-trends-in-CS" target="_blank">
-                View Repository
-            </a>
+            <div class="button-group">
+                <a href="files/Grazioso_Salvare_Original.zip" target="_blank">Original Code</a>
+                <a href="files/Grazioso_Salvare_Enhanced.zip" target="_blank">Enhanced Code</a>
+                <a href="files/CS499_Milestone4_Grazioso_Database_Narrative.docx" target="_blank">Narrative</a>
+                <a href="https://github.com/Skrocf21/CS-340" target="_blank">Repository</a>
+            </div>
         </div>
+    </section>
 
-        <div class="repo-card">
-            <h3>CS-330 Graphics and Visualization</h3>
-            <p>OpenGL graphics and 3D visualization projects.</p>
-            <a href="https://github.com/Skrocf21/CS-330" target="_blank">
-                View Repository
-            </a>
+    <section id="repositories" class="section">
+        <h2>Additional GitHub Repositories</h2>
+
+        <div class="repo-grid">
+
+            <div class="repo-card">
+                <h3>CS-465 Full Stack Development</h3>
+                <p>MEAN stack full stack web application project.</p>
+                <a href="https://github.com/Skrocf21/CS-465-Full-Stack-Development" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-340 Advanced Programming Concepts</h3>
+                <p>MongoDB and Python CRUD dashboard project.</p>
+                <a href="https://github.com/Skrocf21/CS-340" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-260 Data Structures and Algorithms</h3>
+                <p>Course planner using C++ data structures and algorithms.</p>
+                <a href="https://github.com/Skrocf21/CS-260-Software-Test-Automation" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-405 Secure Coding</h3>
+                <p>Projects focused on secure coding and vulnerability mitigation.</p>
+                <a href="https://github.com/Skrocf21/CS-405-Secure-Coding" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-350 Emerging Systems</h3>
+                <p>Embedded systems and Raspberry Pi development projects.</p>
+                <a href="https://github.com/Skrocf21/CS-350-current-emerging-trends-in-CS" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-330 Graphics and Visualization</h3>
+                <p>OpenGL graphics and 3D visualization projects.</p>
+                <a href="https://github.com/Skrocf21/CS-330" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-360 Mobile Architecture</h3>
+                <p>Android and mobile application development projects.</p>
+                <a href="https://github.com/Skrocf21/CS-360-Mobile-Architect-and-Programming" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-320 Software Testing</h3>
+                <p>Unit testing and software quality assurance projects.</p>
+                <a href="https://github.com/Skrocf21/CS-320-Software-Test-Automation" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-250 Software Development Lifecycle</h3>
+                <p>Agile development and software lifecycle documentation.</p>
+                <a href="https://github.com/Skrocf21/CS250" target="_blank">View Repository</a>
+            </div>
+
+            <div class="repo-card">
+                <h3>CS-210 Programming Languages</h3>
+                <p>Foundational programming projects and exercises.</p>
+                <a href="https://github.com/Skrocf21/CS210" target="_blank">View Repository</a>
+            </div>
+
         </div>
+    </section>
 
-        <div class="repo-card">
-            <h3>CS-360 Mobile Architecture</h3>
-            <p>Android and mobile application development projects.</p>
-            <a href="https://github.com/Skrocf21/CS-360-Mobile-Architect-and-Programming" target="_blank">
-                View Repository
-            </a>
-        </div>
-
-        <div class="repo-card">
-            <h3>CS-320 Software Testing</h3>
-            <p>Unit testing and software quality assurance projects.</p>
-            <a href="https://github.com/Skrocf21/CS-320-Software-Test-Automation" target="_blank">
-                View Repository
-            </a>
-        </div>
-
-        <div class="repo-card">
-            <h3>CS-250 Software Development Lifecycle</h3>
-            <p>Agile development and software lifecycle documentation.</p>
-            <a href="https://github.com/Skrocf21/CS250" target="_blank">
-                View Repository
-            </a>
-        </div>
-
-        <div class="repo-card">
-            <h3>CS-210 Programming Languages</h3>
-            <p>Foundational programming projects and exercises.</p>
-            <a href="https://github.com/Skrocf21/CS210" target="_blank">
-                View Repository
-            </a>
-        </div>
-
-    </div>
 </div>
 
 <footer>
-    <p>Steven | SNHU Computer Science ePortfolio | CS-499 Capstone</p>
+    <p>Steven Croft | SNHU Computer Science ePortfolio | CS-499 Capstone</p>
 </footer>
 
 </body>
